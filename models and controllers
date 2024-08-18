@@ -1,0 +1,2 @@
+rails generate model Complaint content:text category:string sub_category:string
+rails generate controller Complaints
