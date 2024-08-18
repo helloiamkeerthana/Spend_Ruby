@@ -1,0 +1,2 @@
+rails new complaint_categorization
+cd complaint_categorization
