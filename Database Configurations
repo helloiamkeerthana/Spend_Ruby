@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: localhost
+
+development:
+  <<: *default
+  database: complaint_categorization_development
+
+test:
+  <<: *default
+  database: complaint_categorization_test
+
+production:
+  <<: *default
+  database: complaint_categorization_production
